@@ -1,0 +1,12 @@
+@charset "UTF-8";
+:root{
+    --cor1: #668899;
+    --cor2: #006688;
+    --cor3: #0ff556;
+
+    --font-padrao: "Arial-black";
+}
+body{
+    background-color: var(--cor3);
+    font-family: var(--font-padrao);
+}
