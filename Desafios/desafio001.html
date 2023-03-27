@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - 001</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        input{
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input#cor1:hover{
+            background-color: red;
+            color: white;            
+        }
+        input#cor2:hover{
+            background-color: rgb(38, 0, 255);
+            color: white;            
+        }
+        input#cor3:hover{
+            background-color: rgb(255, 238, 0);
+            color: rgb(95, 94, 94);            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Deafio das Mensagens</h1>
+        <input id="cor1" type="button" value="Botão 1 vermelho" onclick="botao1()">
+        <input id="cor2" type="button" value="Botão 2 azul" onclick="botao2()">
+        <input id="cor3" type="button" value="Botão 3 amarelo" onclick="botao3()">
+    <script> 
+
+        function botao1(){            
+            document.body.style.background = 'red'
+            alert('Você apertou no botão 1').value
+        }
+        function botao2(){                        
+            document.body.style.background = 'blue'
+            alert('Você apertou no botão 2').value
+        }
+        function botao3(){                        
+            document.body.style.background = 'yellow'
+            alert('Você apertou no botão 3').value
+        }
+
+
+    </script>
+</body>
+</html>
