@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - 004</title>
+    <style>
+        body{
+            background-color: rgb(226, 25, 199);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        input{
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        input#cor1:hover{
+            background-color: red;
+            color: white;            
+        }
+        div{
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+        <input id="cor1" type="button" value="Comprar produto" onclick="botao()">
+        <div id="saida">
+
+        </div>
+    <script>
+        var corpo = document.getElementById('saida')
+        function botao(){
+            var produto = prompt('Qual produto você está comprando?')
+            let valor = Number(prompt(`Quanto custa ${produto} que você está comprando?`))
+            let entrada = Number(prompt(`Qual foi o valor que você deu para pagar ${produto}`))
+            var resp = entrada - valor
+            if (resp < 1000){
+            corpo.innerHTML = (`Você comprou ${produto} que custa R$ ${valor.toFixed(2).replace('.', ',')} Reais<br>Deu R$ ${entrada.toFixed(2).replace('.', ',')} em dinheiro,
+            e vai receber R$ ${resp.toFixed(2).replace('.', ',')} Reais de troco.<br>Volte Sempre!`)
+            }else{
+                corpo.innerHTML = (`Você comprou ${produto} que custa R$ ${valor.toFixed(3).replace('.', ',')} Reais<br>Deu R$ ${entrada.toFixed(3).replace('.', ',')} em dinheiro,
+            e vai receber R$ ${resp.toFixed(2).replace('.', ',')} Reais de troco.<br>Volte Sempre!`)
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - 002</title>
+    <style>
+        body{
+            background-color: rgb(247, 123, 123);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        input{
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input#cor1:hover{
+            background-color: red;
+            color: white;            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Boas-vindas</h1>
+        <input id="cor1" type="button" value="Inicie o desafio" onclick="botao()">
+        <div id="saida">
+
+        </div>
+    <script> 
+        function botao(){
+        let nome = prompt('Qual é o seu nome?')
+        let idade = Number(prompt(`Olá, ${nome}! Quantos anos você tem?`))
+        alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+        }
+    </script>
+</body>
+</html>

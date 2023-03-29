@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - 003</title>
+    <style>
+        body{
+            background-color: rgb(25, 226, 92);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        input{
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input#cor1:hover{
+            background-color: red;
+            color: white;            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+        <input id="cor1" type="button" value="Antecessor e Sucessor" onclick="botao()">
+        <div id="saida">
+
+        </div>
+    <script> 
+        function botao(){
+        let numero = Number(prompt('Digite um número'))
+        var ant = numero - 1
+        var dep = numero + 1
+        alert(`Antes de ${numero}, temos o número ${ant}.\nDepois de ${numero}, temos o número ${dep}`)
+        }
+    </script>
+</body>
+</html>
