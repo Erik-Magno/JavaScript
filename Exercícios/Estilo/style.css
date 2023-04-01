@@ -1,12 +1,19 @@
 @charset "UTF-8";
 body{
     background-color: rgb(70, 142, 236);
-    font: normal 15pt Arial;
+    font: bolder 20pt Arial;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
     color: white;
     text-align: center;
 
+}
+h1{
+    font: bolder 1.5em Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif; 
 }
 section{
     background-color: white;
@@ -18,16 +25,16 @@ section{
 
 }
 div{
-
-
-}
-div{
-
+    text-align: center;
+    padding: 5px;
 
 }
 footer{
     color: white;
     text-align: center;
-    font-style: italic;
+    
+    font: bolder 20pt Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
 
 }
