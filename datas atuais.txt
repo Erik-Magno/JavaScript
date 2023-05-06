@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Hora atual</h1>
+    <div id="saida">
+
+    </div>
+    <script>
+	var a = document.getElementById('saida')
+	
+	var agora = new Date()
+	var hora = agora.getHours()
+	var minutos = agora.getMinutes()
+	var ano = agora.getFullYear()
+	var seg = agora.getMonth()
+	var dia = agora.getDate()
+	
+	
+	var valores = ["jan", "fev", "mar", "abr", "mai"]
+	var nome = valores[agora.getMonth()]
+	
+	
+	a.innerHTML = `São ${hora}:${minutos} Hrs <br>`
+	a.innerHTML += `<br>${ano} / ${nome} / ${dia}`
+	
+    </script>
+</body>
+</html>

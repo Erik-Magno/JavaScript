@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p><label for="cnsc">Escreva a sua Nacionalidade:</label> <input type="text" name="cnsc" id="cnsc" size="15">
+    </p>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="saida">
+
+    </div>
+    <script>
+        function verificar(){
+            var Nasc = document.getElementById('cnsc').value
+            var txt = document.getElementById('saida')
+            var p = 'BRASILEIRO!'
+            var Est = 'ESTRANGEIRO!'
+            if(Nasc == 0){
+                alert('[ERRO] verifique e tente nova mente!')
+            }else if (Nasc == 'Brasil'){
+            txt.innerHTML = `<p>Você é ${p}</p>`
+        } else if (Nasc == 'Brasil '){
+            txt.innerHTML = `<p>Você é ${p}</p>`
+        } else if (Nasc == 'brasil'){
+            txt.innerHTML = `<p>Você é ${p}</p>`
+        }
+         else{
+            txt.innerHTML = `<p>Você é ${Est}</p>`
+            }
+        }
+    </script>
+</body>
+</html>
