@@ -19,9 +19,12 @@ function contar(){
         res.innerHTML += `\u{1F3C1} `                
         let c = i
         if (i < f){
-        while(c <= f){
+        /*while(c <= f){
             res.innerHTML += `${c} \u{1F680}	`
             c += p
+        }*/
+        for(let c = i; c <= f; c += p){            
+            res.innerHTML += `${c} \u{1F680}	`
         }
     } else {
         while(c >= f) {
@@ -30,7 +33,5 @@ function contar(){
         }
     }
         res.innerHTML += `\u{1F4A5}`
-
-
     }
 }
