@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+
+}
+h1{
+    font: bolder 1.5em Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 8px 6px 10px rgba(5, 5, 5, 0.493); 
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+
+}
+div{
+    padding: 5px;
+
+}
+input#bot{
+    font-size: 13pt;
+    width: 110px;    
+    background-color: rgb(207, 206, 206);
+}
+input#bot:hover{
+    font-size: 13pt;
+    font-weight: bold;
+    width: 110px;
+    background-color: rgb(253, 252, 252);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    
+    font: bolder 20pt Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+
+}
