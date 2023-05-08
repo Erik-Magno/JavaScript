@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body{
     background-color: rgb(70, 142, 236);
-    font: normal 20pt Arial;
+    font: bold 20pt Arial;
     font-variant: small-caps;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -11,14 +11,13 @@ header{
 
 }
 h1{
-    font: bolder 1.5em Arial;
+    font: bolder 2em Arial;
     font-variant: small-caps;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0px 0px 5px 0px; 
     text-shadow: 8px 6px 10px rgba(5, 5, 5, 0.493); 
 }
 section{
-    background-color: white;
+    background-color: rgb(255, 254, 254);
     border-radius: 10px;
     padding: 5px;
     width: 450px;
@@ -30,6 +29,9 @@ section{
 div{
     text-align: center;
 
+}
+div#campo{
+    display: none;
 }
 select{
     font-size: 18pt;
