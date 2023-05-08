@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 20pt Arial;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+
+}
+h1{
+    font: bolder 1.5em Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 0px 5px 0px; 
+    text-shadow: 8px 6px 10px rgba(5, 5, 5, 0.493); 
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 450px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+
+}
+
+div{
+    text-align: center;
+
+}
+select{
+    font-size: 18pt;
+    padding: 5px;
+    border: none;
+    overflow: hidden;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    
+    font: bolder 16pt Arial;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer > p{
+    margin: 8px;
+}
